@@ -8,6 +8,33 @@ li {
     list-style: none;
 }
 
+.Hey {
+  animation-duration: 2s;
+  animation-name: slide-in;
+}
+
+.Im {
+  animation-duration: 4s;
+  animation-name: slide-in;
+}
+
+p {
+  animation-duration: 6s;
+  animation-name: slide-in;
+}
+
+@keyframes slide-in {
+  from {
+    translate: 150vw 0;
+    scale: 200% 1;
+  }
+
+  to {
+    translate: 0 0;
+    scale: 100% 1;
+  }
+}
+
 .main-page {
     background-image: url(Images/Header-llustration-desktop.png);
     background-size: cover;
@@ -32,6 +59,19 @@ li {
     display: flex;
     width: 100%;
     align-items: center;
+}
+
+.nav-item {
+  cursor: pointer;
+  padding: 10px 15px;
+  color: #333;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.nav-item:hover {
+  color: white;
+  background-color: #00ffdd; /* Blue background on hover */
+  border-radius: 5px;
 }
 
 .main-info {
@@ -99,13 +139,18 @@ li {
 }
 
 .project {
-    background-color: #36b37e;
-    padding: 1rem 2rem;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    font-weight: bold;
-    cursor: pointer;
+  background-color: #36b37e;
+  padding: 1rem 2rem;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.project:hover {
+  background-color: #166b45;
 }
 
 .Im {
