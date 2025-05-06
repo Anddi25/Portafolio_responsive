@@ -48,145 +48,25 @@
     </div>
     <div class="recent-works">
         <h2>My Recent Works</h2>
-        <div class="works-container">
-            <div class="works">
-                <div class="item-work">
-                    <img src="Images/background_grey.jpg" alt="grey">
-                    <div>
-                        <h2>Multi-Post Stories Gain+Glory</h2>
-                        <ul class="lang">
-                            <li>Ruby on Rails</li>
-                            <li>CSS</li>
-                            <li>JavaScript</li>
-                            <li>HTML</li>
-                        </ul>
-                    </div>
-                    <div class="bottom-project">
-                        <button class="project">See project</button>
-                    </div>
-                </div>
+        <div class="works-container" id="works-container"></div>
+    </div>
+    <div id="project-popup" class="popup hidden">
+        <div class="popup-content">
+        <span class="close-popup">&times;</span>
+        <div class="popup-body">
+            <h2 id="popup-title"></h2>
+            <img id="popup-img" src="" alt="project image" />
+            <p id="popup-description"></p>
+            <ul id="popup-langs"></ul>
+            <div class="popup-links">
+            <a href="#" target="_blank" id="github-link">Ver en GitHub</a>
+            <a href="#" target="_blank" id="live-link">Live Demo</a>
             </div>
-            <div class="works">
-                <div class="item-work">
-                    <img src="Images/background_grey.jpg" alt="grey">
-                    <div>
-                        <h2>Multi-Post Stories Gain+Glory</h2>
-                        <ul class="lang">
-                            <li>Ruby on Rails</li>
-                            <li>CSS</li>
-                            <li>JavaScript</li>
-                            <li>HTML</li>
-                        </ul>
-                    </div>
-                    <div class="bottom-project">
-                        <button class="project">See project</button>
-                    </div>
-                </div>
-            </div>
-            <div class="works">
-                <div class="item-work">
-                    <img src="Images/background_grey.jpg" alt="grey">
-                    <div>
-                        <h2>Multi-Post Stories Gain+Glory</h2>
-                        <ul class="lang">
-                            <li>Ruby on Rails</li>
-                            <li>CSS</li>
-                            <li>JavaScript</li>
-                            <li>HTML</li>
-                        </ul>
-                    </div>
-                    <div class="bottom-project">
-                        <button class="project">See project</button>
-                    </div>
-                </div>
-            </div>
-            <div class="works">
-                <div class="item-work">
-                    <img src="Images/background_grey.jpg" alt="grey">
-                    <div>
-                        <h2>Multi-Post Stories Gain+Glory</h2>
-                        <ul class="lang">
-                            <li>Ruby on Rails</li>
-                            <li>CSS</li>
-                            <li>JavaScript</li>
-                            <li>HTML</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <button class="project">See project</button>
-                    </div>
-                </div>
-            </div>
-            <div class="works">
-                <div class="item-work">
-                    <img src="Images/background_grey.jpg" alt="grey">
-                    <div>
-                        <h2>Multi-Post Stories Gain+Glory</h2>
-                        <ul class="lang">
-                            <li>Ruby on Rails</li>
-                            <li>CSS</li>
-                            <li>JavaScript</li>
-                            <li>HTML</li>
-                        </ul>
-                    </div>
-                    <div class="bottom-project">
-                        <button class="project">See project</button>
-                    </div>
-                </div>
-            </div>
-            <div class="works">
-                <div class="item-work">
-                    <img src="Images/background_grey.jpg" alt="grey">
-                    <div>
-                        <h2>Multi-Post Stories Gain+Glory</h2>
-                        <ul class="lang">
-                            <li>Ruby on Rails</li>
-                            <li>CSS</li>
-                            <li>JavaScript</li>
-                            <li>HTML</li>
-                        </ul>
-                    </div>
-                    <div class="bottom-project">
-                        <button class="project">See project</button>
-                    </div>
-                </div>
-            </div>
-            <div class="works">
-                <div class="item-work">
-                    <img src="Images/background_grey.jpg" alt="grey">
-                    <div>
-                        <h2>Multi-Post Stories Gain+Glory</h2>
-                        <ul class="lang">
-                            <li>Ruby on Rails</li>
-                            <li>CSS</li>
-                            <li>JavaScript</li>
-                            <li>HTML</li>
-                        </ul>
-                    </div>
-                    <div class="bottom-project">
-                        <button class="project">See project</button>
-                    </div>
-                </div>
-            </div>
-            <div class="works">
-                <div class="item-work">
-                    <img src="Images/background_grey.jpg" alt="grey">
-                    <div>
-                        <h2>Multi-Post Stories Gain+Glory</h2>
-                        <ul class="lang">
-                            <li>Ruby on Rails</li>
-                            <li>CSS</li>
-                            <li>JavaScript</li>
-                            <li>HTML</li>
-                        </ul>
-                    </div>
-                    <div class="bottom-project">
-                        <button class="project">See project</button>
-                    </div>
-                </div>
-            </div>
+            <button id="next-project">Siguiente proyecto</button>
+        </div>
         </div>
     </div>
+    
     <div class="about">
         <h1>About me</h1>
         <p> I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don't hesitate to contact me.</p>
@@ -251,6 +131,7 @@
             <input class="form-item submit-bottom" type="submit" name="submit" value="Get in touch">
           </form>
         </div>
-      </div>      
+    </div> 
+    <script src="script.js"></script>
 </body>
 </html>
