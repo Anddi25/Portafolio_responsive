@@ -242,6 +242,10 @@ form {
   box-sizing: border-box;
 }
 
+.form-row > div {
+  flex: 1;
+}
+
 .submit-bottom {
   background-color: green;
   color: white;
